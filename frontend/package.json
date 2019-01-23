@@ -1,0 +1,22 @@
+{
+  "name": "webpack-simple-example",
+  "version": "1.0.0",
+  "description": "Just a quick and dirty example on how Webpack is integrated into the project, and how to use without any frameworks or libraries.",
+  "repository": "git@github.com:apeixinho/webpack-simple-example.git",
+  "license": "GPL-3.0",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn run clean && webpack --progress --mode=development",
+    "build:prod": "yarn run clean && webpack --progress --mode=production",
+    "start": "yarn run build &&  webpack-dev-server --mode=development --open",
+    "start:prod": "yarn run build:prod &&  webpack-dev-server --mode=production --open"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.3",
+    "webpack": "^4.28.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.0"
+  }
+}

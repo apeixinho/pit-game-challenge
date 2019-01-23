@@ -1,0 +1,73 @@
+/*-------------
+ General
+ -------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 1em 'Open Sans', sans-serif;
+}
+
+ul,
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+a:hover,
+a:active {
+    opacity: 1;
+}
+
+a.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+hr {
+    width: 40%;
+    height: 2px;
+    border: 0;
+    margin-bottom: 80px;
+}
+
+img {
+    min-width: auto;
+    max-width: auto;
+    min-height: auto;
+    max-height: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 80px 20px 20px 20px;
+
+    /* h3.title {
+        text-transform: uppercase;
+        font: bold 32px 'Open Sans', sans-serif;
+        margin-bottom: 35px;
+        text-align: center;
+    }, */
+
+    /* p {
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 0 20px;
+        line-height: 2em;
+    } */
+}
