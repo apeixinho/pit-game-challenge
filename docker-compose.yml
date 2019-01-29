@@ -1,0 +1,31 @@
+version: "3.5"
+
+services:
+  frontend:
+    build: frontend
+    # volumes:
+    # - .:/home/app
+    # - /home/app/node_modules
+    ports:
+      - "80:8080"
+    networks:
+      - pitgame-network
+    depends_on:
+      - backend
+    links:
+      - backend
+    #  - springboot:springboot
+    # hostname: frontend
+    # container_name: frontend
+
+  backend:
+    build: backend
+    ports:
+      - "8888:8888"
+    # expose:
+    # - "8080"
+    networks:
+      - pitgame-network
+    # hostname: backend
+networks:
+  pitgame-network:
