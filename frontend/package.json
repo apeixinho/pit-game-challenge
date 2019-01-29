@@ -8,8 +8,8 @@
     "clean": "rimraf dist",
     "build": "yarn run clean && webpack --progress --mode=development",
     "build:prod": "yarn run clean && webpack --progress --mode=production",
-    "start": "yarn run build &&  webpack-dev-server --mode=development --open",
-    "start:prod": "yarn run build:prod &&  webpack-dev-server --mode=production --open"
+    "start": "yarn run build &&  webpack-dev-server --hot --progress --mode=development",
+    "start:prod": "yarn run build:prod &&  webpack-dev-server --hot --progress --mode=production"
   },
   "dependencies": {
     "rimraf": "^2.6.3",
