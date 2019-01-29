@@ -7,7 +7,7 @@ services:
     # - .:/home/app
     # - /home/app/node_modules
     ports:
-      - "80:8080"
+      - "8080:8080"
     networks:
       - pitgame-network
     depends_on:

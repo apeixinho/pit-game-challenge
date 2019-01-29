@@ -9,7 +9,7 @@
     "build": "yarn run clean && webpack --progress --mode=development",
     "build:prod": "yarn run clean && webpack --progress --mode=production",
     "start": "yarn run build &&  webpack-dev-server --hot --progress --mode=development",
-    "start:prod": "yarn run build:prod &&  webpack-dev-server --hot --progress --mode=production"
+    "start:prod": "yarn run build:prod &&  webpack-dev-server --progress --mode=production --host 0.0.0.0"
   },
   "dependencies": {
     "rimraf": "^2.6.3",
